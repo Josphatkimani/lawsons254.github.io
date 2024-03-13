@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Fun Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<script>
+  function checkUserAgent() {
+    var userAgent = navigator.userAgent.toLowerCase();
+
+    if (userAgent.indexOf('android') !== -1 || userAgent.indexOf('iphone') !== -1) {
+      // Redirect or display an error message for mobile devices
+      window.location.href = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Macaca_nigra_self-portrait_large.jpg/440px-Macaca_nigra_self-portrait_large.jpg';
+    }
+  }
+</script>
+
+<body>
+
+  <div class="container">
+    <div class="width-35">
+      <form onsubmit="return false;" id="form-el" class="form col">
+        <h1>  WILL YOU BE MY GIRLFRIEND❤️❤️?</h1>
+        <img alt="nom" id="nom" style="height: 300px; display: block;" src="./assets/nom.gif" />
+        <img alt="no" id="no" style="height: 300px; display: none;" src="./assets/no.gif" />
+        <img alt="yes" id="yes" style="height: 300px; display: none;" src="./assets/yes.gif" />
+        <button class="btn" style="background-color:purple"> NO </button>
+        <button style="position: absolute; bottom: 20; right: 80;" id="yes-btn" onClick="yes()"> YES </button>
+    </div>
+  </div>
+  </div>
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
